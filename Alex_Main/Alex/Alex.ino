@@ -501,27 +501,27 @@ void handlePacket(TPacket *packet)
 void loop() {
 // Uncomment the code below for Step 2 of Activity 3 in Week 8 Studio 2
 
- //forward(0, 100);
+//  forward(0, 100);
 
 // Uncomment the code below for Week 9 Studio 2
 
 
  // put your main code here, to run repeatedly:
-  TPacket recvPacket; // This holds commands from the Pi
+//  TPacket recvPacket; // This holds commands from the Pi
 
-  TResult result = readPacket(&recvPacket);
+//  TResult result = readPacket(&recvPacket);
   
-  if(result == PACKET_OK)
-    handlePacket(&recvPacket);
-  else
-    if(result == PACKET_BAD)
-    {
-      sendBadPacket();
-    }
-    else
-      if(result == PACKET_CHECKSUM_BAD)
-      {
-        sendBadChecksum();
-      } 
+//  if(result == PACKET_OK)
+//    handlePacket(&recvPacket);
+//  else
+//    if(result == PACKET_BAD)
+//    {
+//      sendBadPacket();
+//    }
+//    else
+//      if(result == PACKET_CHECKSUM_BAD)
+//     {
+//        sendBadChecksum();
+//      } 
       
 }
