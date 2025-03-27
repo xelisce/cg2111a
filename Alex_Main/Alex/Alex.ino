@@ -499,9 +499,10 @@ void handlePacket(TPacket *packet)
 }
 
 void loop() {
+  dbprintf("hello %d\n", 2);
 // Uncomment the code below for Step 2 of Activity 3 in Week 8 Studio 2
 
-//  forward(0, 100);
+//  right(10, 60);
 
 // Uncomment the code below for Week 9 Studio 2
 
