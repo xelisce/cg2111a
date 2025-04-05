@@ -8,6 +8,7 @@
 #define PIN19 (1<<PD2)
 volatile float dist_travelled = 0;
 volatile int heading = 0;
+volatile uint16_t Red = 0, Green = 0, Blue = 0;
 
 
 void setup() {
@@ -17,7 +18,9 @@ void setup() {
   // enable pullups
   DDRD = 0b11110011;
   PIND = 0b00001100;
-  setupSerial();
+  //setupSerial();
+  Serial.begin(9600);
+  GPIO_init();  // Initialize pins
 }
 
 void loop() {
@@ -25,8 +28,24 @@ void loop() {
   Serial.println(dist_travelled);
   Serial.print("Heading: ");
   Serial.println(heading);
+  GetColors();
+    // Object detection based on color
+    if (Red < Green) {
+        Serial.println("Object is Red");
+    } else if (Green < Red) {
+        Serial.println("Object is Green");
+    } else {
+        Serial.println("Object is Unknown");
+    }
+
+    _delay_ms(2000);
 //  setRightDist(20, 70);
 //  if (heading >= 5) {
 //    stopMotors();
 //  }
+}
+
+
+void loop() {
+
 }
