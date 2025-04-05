@@ -44,8 +44,3 @@ void loop() {
 //    stopMotors();
 //  }
 }
-
-
-void loop() {
-
-}

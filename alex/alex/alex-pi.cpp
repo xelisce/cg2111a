@@ -181,30 +181,38 @@ void sendCommand(char command)
 
 	switch(command)
 	{
-		case 'f':
-		case 'F':
-			getParams(&commandPacket);
+		case 'w':
+		case 'W':
+			//getParams(&commandPacket);
+			commandPacket.params[0] = 1; //Move 1 CM
+			commandPacket.params[1] = 50; //With 50% Power
 			commandPacket.command = COMMAND_FORWARD;
-			sendPacket(&commandPacket);
-			break;
-
-		case 'b':
-		case 'B':
-			getParams(&commandPacket);
-			commandPacket.command = COMMAND_REVERSE;
-			sendPacket(&commandPacket);
-			break;
-
-		case 'l':
-		case 'L':
-			getParams(&commandPacket);
-			commandPacket.command = COMMAND_TURN_LEFT;
 			sendPacket(&commandPacket);
 			break;
 
 		case 'r':
 		case 'R':
-			getParams(&commandPacket);
+			//getParams(&commandPacket);
+			commandPacket.params[0] = 1; //Move 1 CM
+			commandPacket.params[1] = 50; //With 50% Power
+			commandPacket.command = COMMAND_REVERSE;
+			sendPacket(&commandPacket);
+			break;
+
+		case 'a':
+		case 'A':
+			//getParams(&commandPacket);
+			commandPacket.params[0] = 1; //Move 1 CM
+			commandPacket.params[1] = 50; //With 50% Power
+			commandPacket.command = COMMAND_TURN_LEFT;
+			sendPacket(&commandPacket);
+			break;
+
+		case 'd':
+		case 'D':
+			//getParams(&commandPacket);
+			commandPacket.params[0] = 1; //Move 1 CM
+			commandPacket.params[1] = 50; //With 50% Power
 			commandPacket.command = COMMAND_TURN_RIGHT;
 			sendPacket(&commandPacket);
 			break;
@@ -271,6 +279,7 @@ int main()
 
 		sendCommand(ch);
 	}
+
 
 	printf("Closing connection to Arduino.\n");
 	endSerial();
