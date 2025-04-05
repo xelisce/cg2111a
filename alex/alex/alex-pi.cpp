@@ -7,6 +7,7 @@
 #include "serial.h"
 #include "serialize.h"
 #include "constants.h"
+#include <conio.h>
 
 #define PORT_NAME			"/dev/ttyACM0"
 #define BAUD_RATE			B9600
@@ -261,9 +262,9 @@ int main()
 
 	while(!exitFlag)
 	{
-		char ch;
-		printf("Command (f=forward, b=reverse, l=turn left, r=turn right, s=stop, c=clear stats, g=get stats q=exit)\n");
-		scanf("%c", &ch);
+		char ch = getch();
+		printf("Command (w=forward, r=reverse, a=turn left, d=turn right, s=stop, c=clear stats, g=get stats q=exit)\n");
+//		scanf("%c", &ch);
 
 		// Purge extraneous characters from input stream
 		flushInput();
