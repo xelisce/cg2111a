@@ -1,0 +1,204 @@
+===============================
+= Setting up the environment =
+===============================
+
+Changing directory to the location of the script...
+Directory changed to /home/pi/Desktop/rosnslam
+
+
+
+===============================
+= Installing Python          =
+===============================
+
+
+
+
+===============================
+= Installing Dependencies    =
+===============================
+
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: pip in ./env/lib/python3.11/site-packages (25.0.1)
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (1.24.2)
+Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (3.6.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (3.5)
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+
+Installing opencv-python...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting opencv-python
+  Using cached opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (20 kB)
+Requirement already satisfied: numpy>=1.21.2 in /usr/lib/python3/dist-packages (from opencv-python) (1.24.2)
+Downloading opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (42.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.2/42.2 MB 424.5 kB/s eta 0:00:00
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: opencv-python
+Successfully installed opencv-python-4.11.0.86
+
+Installing control...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/rosnslam/libraries/epp2/control
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from control==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (from control==0.1.0) (3.6.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from control==0.1.0) (3.5)
+Building wheels for collected packages: control
+  Building editable for control (pyproject.toml): started
+  Building editable for control (pyproject.toml): finished with status 'done'
+  Created wheel for control: filename=control-0.1.0-0.editable-py3-none-any.whl size=1282 sha256=2873c31c0dbf6d78c9fcc11c403ebc522537fb843724d2d2e77c888c8a4048a4
+  Stored in directory: /tmp/pip-ephem-wheel-cache-4lzlges8/wheels/a6/e7/2a/a93e2dc09ea8d006647a224978fcd29259d7718ca9a51429c5
+Successfully built control
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: control
+Successfully installed control-0.1.0
+
+Installing display...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/rosnslam/libraries/epp2/display
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from display==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (from display==0.1.0) (3.6.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from display==0.1.0) (3.5)
+Building wheels for collected packages: display
+  Building editable for display (pyproject.toml): started
+  Building editable for display (pyproject.toml): finished with status 'done'
+  Created wheel for display: filename=display-0.1.0-0.editable-py3-none-any.whl size=1285 sha256=432fe8c1ed230d9cd93eb42c2560a43568312cfe8639b97b27e8a8c63ac636df
+  Stored in directory: /tmp/pip-ephem-wheel-cache-oo_0xd58/wheels/2f/3a/34/7ed999213f9785ad84717b117f2bdef69151b7b6baacdf4f35
+Successfully built display
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: display
+Successfully installed display-0.1.0
+
+Installing lidar...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/rosnslam/libraries/epp2/lidar
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from lidar==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (from lidar==0.1.0) (3.6.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from lidar==0.1.0) (3.5)
+Building wheels for collected packages: lidar
+  Building editable for lidar (pyproject.toml): started
+  Building editable for lidar (pyproject.toml): finished with status 'done'
+  Created wheel for lidar: filename=lidar-0.1.0-0.editable-py3-none-any.whl size=1259 sha256=c7308d622cfd90871df649bacb9230f373776c5b674339924156846ab985130c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-9icx27dv/wheels/25/76/3b/b459b11412d92ab2646073b1cd8349477fd485c70166693560
+Successfully built lidar
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: lidar
+Successfully installed lidar-0.1.0
+
+Installing networking...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/rosnslam/libraries/epp2/networking
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from networking==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (from networking==0.1.0) (3.6.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from networking==0.1.0) (3.5)
+Building wheels for collected packages: networking
+  Building editable for networking (pyproject.toml): started
+  Building editable for networking (pyproject.toml): finished with status 'done'
+  Created wheel for networking: filename=networking-0.1.0-0.editable-py3-none-any.whl size=1322 sha256=bef6d11128bbf31d679758f9efd75aef1f9bc643dc83c16c3adce458f42ae91c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-mouvul4n/wheels/07/49/80/14e24c3eb3f60a2abcb650631c4b8a24f1ab12a13a179e689c
+Successfully built networking
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: networking
+Successfully installed networking-0.1.0
+
+Installing pubsub...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/rosnslam/libraries/epp2/pubsub
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from pubsub==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (from pubsub==0.1.0) (3.6.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from pubsub==0.1.0) (3.5)
+Building wheels for collected packages: pubsub
+  Building editable for pubsub (pyproject.toml): started
+  Building editable for pubsub (pyproject.toml): finished with status 'done'
+  Created wheel for pubsub: filename=pubsub-0.1.0-0.editable-py3-none-any.whl size=1272 sha256=7957de2a0931f35008a938f1ee23accf3d3a83beb532a11cb6615776536956a8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-fp35qmzd/wheels/60/6b/be/eafd18087194f1596f6dafd51d389eefbfd6c34b3ec8f6121f
+Successfully built pubsub
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: pubsub
+Successfully installed pubsub-0.1.0
+
+Installing slam...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/rosnslam/libraries/epp2/slam
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from slam==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (from slam==0.1.0) (3.6.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from slam==0.1.0) (3.5)
+Building wheels for collected packages: slam
+  Building editable for slam (pyproject.toml): started
+  Building editable for slam (pyproject.toml): finished with status 'done'
+  Created wheel for slam: filename=slam-0.1.0-0.editable-py3-none-any.whl size=1243 sha256=74536aabe7043d3499bf9f8928903fb19e0e79225da9020321ce3560a904117d
+  Stored in directory: /tmp/pip-ephem-wheel-cache-56wcjb30/wheels/e3/d7/6a/a7de754d4e761bc1f63371620c9002fdc787a32d9d15ec8198
+Successfully built slam
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: slam
+Successfully installed slam-0.1.0
+
+Setup complete. Exiting...

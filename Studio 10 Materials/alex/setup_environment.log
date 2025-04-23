@@ -1,0 +1,94 @@
+===============================
+= Setting up the environment =
+===============================
+
+Changing directory to the location of the script...
+Directory changed to /home/pi/Desktop/Studio 10 Materials/alex
+
+
+
+===============================
+= Installing Python          =
+===============================
+
+
+
+
+===============================
+= Installing Dependencies    =
+===============================
+
+Creating virtual environment...
+Virtual environment created.
+
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: pip in ./env/lib/python3.11/site-packages (23.0.1)
+Collecting pip
+  Downloading https://www.piwheels.org/simple/pip/pip-25.0.1-py3-none-any.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 292.3 kB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.0.1
+    Uninstalling pip-23.0.1:
+      Successfully uninstalled pip-23.0.1
+Successfully installed pip-25.0.1
+
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (1.24.2)
+Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (3.6.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (3.5)
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+
+Installing pyrplidar...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/Studio%2010%20Materials/alex/libraries/external/pyrplidar
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from pyrplidar==0.1.2) (3.5)
+Building wheels for collected packages: pyrplidar
+  Building editable for pyrplidar (pyproject.toml): started
+  Building editable for pyrplidar (pyproject.toml): finished with status 'done'
+  Created wheel for pyrplidar: filename=pyrplidar-0.1.2-0.editable-py3-none-any.whl size=3264 sha256=03281fd6a59f78af5d42053e4dd89fdd927c2d774bda8f04f88f546428de3c3c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-6tb0bg6z/wheels/69/8c/0b/e63960a9ee3229a75f2b827515a5bd5020eb63153c7cae4af4
+Successfully built pyrplidar
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: pyrplidar
+Successfully installed pyrplidar-0.1.2
+
+Installing lidar...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/Studio%2010%20Materials/alex/libraries/epp2/lidar
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from lidar==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (from lidar==0.1.0) (3.6.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from lidar==0.1.0) (3.5)
+Building wheels for collected packages: lidar
+  Building editable for lidar (pyproject.toml): started
+  Building editable for lidar (pyproject.toml): finished with status 'done'
+  Created wheel for lidar: filename=lidar-0.1.0-0.editable-py3-none-any.whl size=1278 sha256=6c735605a925e22e466f70cac138776478a304d8410473bc55bd098cb80eca10
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ujnubnd4/wheels/94/db/b1/6895a4f77ff7a7759c0fe5f3e36e102991cc4c23b515bdde30
+Successfully built lidar
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: lidar
+Successfully installed lidar-0.1.0
+
+Setup complete. Exiting...
